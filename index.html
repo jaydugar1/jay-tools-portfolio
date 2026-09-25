@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jay Dugar — Internal Tools</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Poppins:wght@600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-circle hero-circle-1"></div>
+  <div class="hero-circle hero-circle-2"></div>
+  <div class="hero-inner">
+    <div class="avatar">JD</div>
+    <div class="hero-text">
+      <div class="eyebrow">Internal Tools</div>
+      <h1>Jay Dugar</h1>
+      <p>Business Analyst in Strategy &amp; Analytics, supporting Activation &amp; Conversion through Marketing and Product. Owner of People Team Analytics, B2B &amp; B2C Marketing Analytics, and Marketing Testing Analytics — contributor to Web App Analytics on the Product side. A running collection of the tools I've built along the way.</p>
+    </div>
+  </div>
+</header>
+
+<nav class="tabbar">
+  <div class="tabbar-inner">
+    <button class="tab is-active" data-tab="overview" style="--accent:#005042">Overview</button>
+    <button class="tab" data-tab="people" style="--accent:#005042">People Analytics</button>
+    <button class="tab" data-tab="special" style="--accent:#FF6947">Special Projects</button>
+    <button class="tab" data-tab="marketing" style="--accent:#E45F95">B2B &amp; B2C Marketing</button>
+    <button class="tab" data-tab="testing" style="--accent:#005042">Marketing Testing</button>
+  </div>
+</nav>
+
+<main class="page-body">
+  <div class="stat-line">
+    <div class="stat-rect"></div>
+    <span>4 tools across 4 areas</span>
+  </div>
+
+  <!-- Overview -->
+  <section class="tab-section is-active" id="section-overview">
+    <div class="overview-grid">
+      <div class="overview-left">
+        <h2>Table of Contents</h2>
+        <div class="toc-list">
+          <div class="toc-row" data-goto="people">
+            <div class="toc-dot" style="background:#005042"></div>
+            <div>
+              <div class="toc-name">People Analytics</div>
+              <div class="toc-detail">HR Analytics Dashboard · 1 tool, 0 analyses</div>
+            </div>
+          </div>
+          <div class="toc-row" data-goto="special">
+            <div class="toc-dot" style="background:#FF6947"></div>
+            <div>
+              <div class="toc-name">Special Projects</div>
+              <div class="toc-detail">Intranet · 1 tool, 0 analyses</div>
+            </div>
+          </div>
+          <div class="toc-row" data-goto="marketing">
+            <div class="toc-dot" style="background:#E45F95"></div>
+            <div>
+              <div class="toc-name">B2B &amp; B2C Marketing</div>
+              <div class="toc-detail">TMO Calculation Tool · 1 tool, 0 analyses</div>
+            </div>
+          </div>
+          <div class="toc-row" data-goto="testing">
+            <div class="toc-dot" style="background:#005042"></div>
+            <div>
+              <div class="toc-name">Marketing Testing</div>
+              <div class="toc-detail">Testing Analytics · 1 tool, 0 analyses</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="announcements-heading">Announcements</h2>
+        <div class="announcements-list">
+          <div class="announcement-card">
+            <div class="announcement-date">Sep 2026</div>
+            <div class="announcement-text">TMO Calculation Tool went live — used by Marketing and CS for upsell targeting.</div>
+          </div>
+          <div class="announcement-card">
+            <div class="announcement-date">Sep 2026</div>
+            <div class="announcement-text">HR Analytics Dashboard launched for the People Team.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview-right">
+        <h2>Suggestions</h2>
+        <p class="suggestions-intro">Have an idea for a new tool or analysis? Drop it here.</p>
+        <textarea id="suggestion-input" placeholder="e.g. A dashboard tracking churn by segment..."></textarea>
+        <button id="submit-suggestion" class="btn-pill">Submit idea</button>
+        <div id="suggestions-list" class="suggestions-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- People Analytics -->
+  <section class="tab-section" id="section-people">
+    <div class="area-block">
+      <div class="area-header">
+        <h2 style="color:#005042">People Analytics</h2>
+        <span class="area-subtitle">HR metrics &amp; workforce reporting</span>
+      </div>
+      <div class="area-body">
+        <div>
+          <div class="col-label">Tools</div>
+          <div class="tools-grid">
+
+            <div class="tool-card">
+              <div class="tool-strip" style="background:#005042"></div>
+              <div class="tool-header" data-toggle="hr">
+                <div class="tool-row-top">
+                  <div class="tool-icon" style="background:#e8f5f2">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#005042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                  </div>
+                  <span class="badge badge-filled">Live</span>
+                </div>
+                <span class="category-badge">HR</span>
+                <h3>HR Analytics Dashboard</h3>
+                <p class="tool-desc">Aggregated HR metrics and headcount analytics in one live dashboard.</p>
+                <div class="tool-footer">
+                  <span>Updated Sep 2026</span>
+                  <span class="toggle-label" style="color:#005042">See details ↓</span>
+                </div>
+              </div>
+              <div class="tool-expand" hidden>
+                <p class="tool-detail">Used to fill out HR KPIs and answer questions from Legal &amp; Commercial about employee locations. Tracks attrition, termination, and other metrics that People Team leadership keeps a close eye on.</p>
+                <a href="https://hranalyticsdashboard-henna.vercel.app/" target="_blank" rel="noopener" class="btn-pill btn-cta">Open tool →</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div>
+          <div class="col-label">Analyses</div>
+          <div class="analyses-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8a8070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+            <div class="placeholder-text">No analyses yet — decks, write-ups, and long-term studies for this area will live here.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer-note">More tools added as they ship.</p>
+  </section>
+
+  <!-- Special Projects -->
+  <section class="tab-section" id="section-special">
+    <div class="area-block">
+      <div class="area-header">
+        <h2 style="color:#005042">Special Projects</h2>
+        <span class="area-subtitle">Cross-org initiatives</span>
+      </div>
+      <div class="area-body">
+        <div>
+          <div class="col-label">Tools</div>
+          <div class="tools-grid">
+
+            <div class="tool-card">
+              <div class="tool-strip" style="background:#FF6947"></div>
+              <div class="tool-header" data-toggle="intranet">
+                <div class="tool-row-top">
+                  <div class="tool-icon" style="background:#fff0ec">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e04a28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6.001a2 2 0 0 1 2.582 0l7 6.001A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  </div>
+                  <span class="badge badge-muted">Coming Soon</span>
+                </div>
+                <span class="category-badge">Company</span>
+                <h3>Intranet</h3>
+                <p class="tool-desc">Central hub for team announcements, docs, and resources.</p>
+                <div class="tool-footer">
+                  <span>Updated TBD</span>
+                  <span class="toggle-label" style="color:#655e52">See details ↓</span>
+                </div>
+              </div>
+              <div class="tool-expand" hidden>
+                <p class="tool-detail">Will eventually be cascaded across the organization — a centralized location for announcements, resources, celebrations, and learning about the company.</p>
+                <span class="btn-pill btn-disabled">Coming soon</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div>
+          <div class="col-label">Analyses</div>
+          <div class="analyses-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8a8070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+            <div class="placeholder-text">No analyses yet — decks, write-ups, and long-term studies for this area will live here.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer-note">More tools added as they ship.</p>
+  </section>
+
+  <!-- B2B & B2C Marketing -->
+  <section class="tab-section" id="section-marketing">
+    <div class="area-block">
+      <div class="area-header">
+        <h2 style="color:#005042">B2B &amp; B2C Marketing</h2>
+        <span class="area-subtitle">Marketing analytics &amp; targeting</span>
+      </div>
+      <div class="area-body">
+        <div>
+          <div class="col-label">Tools</div>
+          <div class="tools-grid">
+
+            <div class="tool-card">
+              <div class="tool-strip" style="background:#E45F95"></div>
+              <div class="tool-header" data-toggle="tmo">
+                <div class="tool-row-top">
+                  <div class="tool-icon" style="background:#fceef4">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c43d76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+                  </div>
+                  <span class="badge badge-filled">Live</span>
+                </div>
+                <span class="category-badge">Analytics</span>
+                <h3>TMO Calculation Tool</h3>
+                <p class="tool-desc">Calculates target member outcomes to support program decisions.</p>
+                <div class="tool-footer">
+                  <span>Updated Sep 2026</span>
+                  <span class="toggle-label" style="color:#005042">See details ↓</span>
+                </div>
+              </div>
+              <div class="tool-expand" hidden>
+                <p class="tool-detail">Used by Marketing and CS for upsells — to estimate the impact TMO would have had based on testing, and to provide reasons for approving TMO outreach for specific client populations.</p>
+                <a href="https://tmo-projection-calculator.onrender.com/" target="_blank" rel="noopener" class="btn-pill btn-cta">Open tool →</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div>
+          <div class="col-label">Analyses</div>
+          <div class="analyses-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8a8070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+            <div class="placeholder-text">No analyses yet — decks, write-ups, and long-term studies for this area will live here.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer-note">More tools added as they ship.</p>
+  </section>
+
+  <!-- Marketing Testing -->
+  <section class="tab-section" id="section-testing">
+    <div class="area-block">
+      <div class="area-header">
+        <h2 style="color:#005042">Marketing Testing</h2>
+        <span class="area-subtitle">Experimentation &amp; test analytics</span>
+      </div>
+      <div class="area-body">
+        <div>
+          <div class="col-label">Tools</div>
+          <div class="tools-grid">
+
+            <div class="tool-card">
+              <div class="tool-strip" style="background:#005042"></div>
+              <div class="tool-header" data-toggle="testing">
+                <div class="tool-row-top">
+                  <div class="tool-icon" style="background:#e8f5f2">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#005042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><path d="M6.453 15h11.094"/><path d="M8.5 2h7"/></svg>
+                  </div>
+                  <span class="badge badge-muted">Coming Soon</span>
+                </div>
+                <span class="category-badge">QA</span>
+                <h3>Testing Analytics</h3>
+                <p class="tool-desc">Tracks and visualizes test coverage and results across releases.</p>
+                <div class="tool-footer">
+                  <span>Updated TBD</span>
+                  <span class="toggle-label" style="color:#655e52">See details ↓</span>
+                </div>
+              </div>
+              <div class="tool-expand" hidden>
+                <p class="tool-detail">Tracked by members of the testing steering committee, and used to inform product marketing strategy going forward.</p>
+                <span class="btn-pill btn-disabled">Coming soon</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div>
+          <div class="col-label">Analyses</div>
+          <div class="analyses-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8a8070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+            <div class="placeholder-text">No analyses yet — decks, write-ups, and long-term studies for this area will live here.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer-note">More tools added as they ship.</p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
