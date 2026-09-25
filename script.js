@@ -15,17 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     row.addEventListener('click', () => activateTab(row.dataset.goto));
   });
 
-  document.querySelectorAll('.tool-header').forEach((header) => {
-    header.addEventListener('click', () => {
-      const card = header.closest('.tool-card');
-      const expand = card.querySelector('.tool-expand');
-      const label = header.querySelector('.toggle-label');
-      const isOpen = !expand.hidden;
-      expand.hidden = isOpen;
-      label.textContent = isOpen ? 'See details ↓' : 'Hide details ↑';
-    });
-  });
-
   const suggestionInput = document.getElementById('suggestion-input');
   const submitButton = document.getElementById('submit-suggestion');
   const suggestionsList = document.getElementById('suggestions-list');
