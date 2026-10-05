@@ -27,6 +27,7 @@
 <nav class="tabbar">
   <div class="tabbar-inner">
     <button class="tab is-active" data-tab="overview" style="--accent:#005042">Overview</button>
+    <button class="tab" data-tab="webengagement" style="--accent:#2563A8">Web Engagement</button>
     <button class="tab" data-tab="people" style="--accent:#005042">People Analytics</button>
     <button class="tab" data-tab="special" style="--accent:#FF6947">Special Projects</button>
     <button class="tab" data-tab="marketing" style="--accent:#E45F95">B2B &amp; B2C Marketing</button>
@@ -37,7 +38,7 @@
 <main class="page-body">
   <div class="stat-line">
     <div class="stat-rect"></div>
-    <span>6 tools across 4 areas</span>
+    <span>7 tools across 5 areas</span>
   </div>
 
   <!-- Overview -->
@@ -46,6 +47,13 @@
       <div class="overview-left">
         <h2>Table of Contents</h2>
         <div class="toc-list">
+          <div class="toc-row" data-goto="webengagement">
+            <div class="toc-dot" style="background:#2563A8"></div>
+            <div>
+              <div class="toc-name">Web Engagement</div>
+              <div class="toc-detail">Pendo Pages Features &amp; Analytics · 1 tool, 1 analysis</div>
+            </div>
+          </div>
           <div class="toc-row" data-goto="people">
             <div class="toc-dot" style="background:#005042"></div>
             <div>
@@ -57,7 +65,7 @@
             <div class="toc-dot" style="background:#FF6947"></div>
             <div>
               <div class="toc-name">Special Projects</div>
-              <div class="toc-detail">Intranet · 1 tool, 2 analyses</div>
+              <div class="toc-detail">Intranet · 1 tool, 3 analyses</div>
             </div>
           </div>
           <div class="toc-row" data-goto="marketing">
@@ -95,6 +103,10 @@
             <div class="announcement-text">Intranet went live — the central hub for announcements, docs, and resources.</div>
           </div>
           <div class="announcement-card">
+            <div class="announcement-date">Oct 2026</div>
+            <div class="announcement-text">Web Engagement added — Pendo Pages Features &amp; Analytics is now live.</div>
+          </div>
+          <div class="announcement-card">
             <div class="announcement-date">Sep 2026</div>
             <div class="announcement-text">TMO Calculation Tool went live — used by Marketing and CS for upsell targeting.</div>
           </div>
@@ -113,6 +125,56 @@
         <div id="suggestions-list" class="suggestions-list"></div>
       </div>
     </div>
+  </section>
+
+  <!-- Web Engagement -->
+  <section class="tab-section" id="section-webengagement">
+    <div class="area-block">
+      <div class="area-header">
+        <h2 style="color:#005042">Web Engagement</h2>
+        <span class="area-subtitle">Product usage &amp; engagement analytics</span>
+      </div>
+      <div class="area-body">
+        <div>
+          <div class="col-label">Tools</div>
+          <div class="tools-grid">
+
+            <div class="tool-card">
+              <div class="tool-strip" style="background:#2563A8"></div>
+              <div class="tool-icon" style="background:#e8f0fa">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.48 12H2"/></svg>
+              </div>
+              <div class="tool-body">
+                <div class="tool-badges">
+                  <span class="category-badge">Product</span>
+                  <span class="badge badge-filled">Live</span>
+                </div>
+                <h3>Pendo Pages Features &amp; Analytics</h3>
+                <p class="tool-desc">Self-serve Databricks dashboard for Pendo-tracked page and feature usage across the web app.</p>
+              </div>
+              <div class="tool-action">
+                <a href="https://adb-4178024078067498.18.azuredatabricks.net/dashboardsv3/01f1b849db521f90bcd820edaba54159/published?o=4178024078067498" target="_blank" rel="noopener" class="btn-pill btn-cta">Open tool →</a>
+                <span class="tool-updated">Updated Oct 2026</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div>
+          <div class="col-label">Analyses</div>
+          <div class="analyses-list">
+            <a href="https://employerdirect-my.sharepoint.com/:p:/g/personal/jay_dugar_edhc_com1/IQAwLefjTz8KQ7_kpc4X0Oj9AbnC5QiCJYkCPI11516Ti1E?e=c0IHhA" target="_blank" rel="noopener" class="analysis-item" data-date="2026-10-01">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#005042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              <div>
+                <div class="analysis-title">Web Engagement Analysis</div>
+                <div class="analysis-date">Oct 1, 2026</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer-note">More tools added as they ship.</p>
   </section>
 
   <!-- People Analytics -->
@@ -221,6 +283,13 @@
                 <div class="analysis-title">Email Performance Analysis - Jun Tian</div>
                 <div class="analysis-date">Aug 2026</div>
                 <div class="analysis-note">Contributor — supported Jun, Enterprise Analytics Intern, with her intern project.</div>
+              </div>
+            </a>
+            <a href="https://employerdirect-my.sharepoint.com/:p:/g/personal/jay_dugar_edhc_com1/IQCwyAJFS8OBR5Z1-smxRQKjAaFq4GoU2_auMvovh2QBHF4?e=ZaPRr2" target="_blank" rel="noopener" class="analysis-item" data-date="2026-04-01">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#005042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              <div>
+                <div class="analysis-title">Network Distance Analysis</div>
+                <div class="analysis-date">Apr 2026</div>
               </div>
             </a>
             <a href="https://employerdirect-my.sharepoint.com/:p:/g/personal/jay_dugar_edhc_com1/IQAvmbayL3EeTLC1aCSlgR_PATuHuwJYxpf_T8SGFbYfa9U?e=0Gtic1" target="_blank" rel="noopener" class="analysis-item" data-date="2025-10-24">
